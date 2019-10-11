@@ -12,3 +12,11 @@ autogen.sh
 configure 
 
 aclocal.m4
+
+5 - Если таких скриптов в архиве не оказалось, то можно выполнить последовательно следующие команды: 
+  aclocal
+  autoheader
+  automake --gnu --add-missing --copy --foreign
+  autoconf -f -Wall
+  
+ И после ./.configure
